@@ -1,0 +1,43 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var count=0;
+            var linebreak="<br />"
+            document.write("Starting Loop ");
+            while(count<=10){
+                document.write(linebreak);
+                document.write("the number of count:"+count);
+                count++;
+            }
+            document.write(linebreak);
+            document.write("Loop stopped!");
+
+            var b=0;
+            document.write(linebreak);
+            document.write("do-while loop starts");
+            do{
+                document.write("the number of b:"+b+"<br />");
+                b++;                
+            }while(b<5);
+             document.write("the number of b:"+b+"<br />"); 
+
+            var cnt;
+            document.write("for loop is starting <br />")
+            for (cnt=0;cnt<=10;cnt++){
+                document.write("Current cnt:"+cnt+"<br />")
+            } 
+            document.write("for loop is ending <br />")
+
+            var aProperty;
+            // for (variable in object) loop set the value of object into variable in each iteration
+            document.write("for in loop is starting <br />");
+
+            for (aProperty in navigator){
+                document.write(aProperty);
+                document.write("<br />");
+            }
+            document.write("for in loop ended");
+        </script>
+    </body>
+</html>
