@@ -1,0 +1,33 @@
+<!-- list of events in html5  https://www.tutorialspoint.com/javascript/javascript_events.htm -->
+<!-- the definition and usage of cookies https://www.tutorialspoint.com/javascript/javascript_cookies.htm -->
+<html>
+    <head>
+        <script>
+            function redirect(){
+                window.location="https://www.google.com"
+            }
+            // show message to the user
+            documnt.show(" You will be redirected after afew seconds to new pages");
+            // this function calls redirect function after time
+            setTimeout('redirect()', 10000)
+
+            // redirect visitors based on their browser 
+            var browsername = navigator.appName;
+            if( browsername == "Netscape" ) {
+               window.location = "http://www.location.com/ns.htm";
+            } else if ( browsername =="Microsoft Internet Explorer") {
+               window.location = "http://www.location.com/ie.htm";
+            } else {
+               window.location = "http://www.location.com/other.htm";
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <p>
+            press the to see how page will be redirected
+        </p> 
+        <input type="button" onclick=redirect() value="click Me"/input>
+    </body>
+</html>
