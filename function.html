@@ -1,0 +1,24 @@
+
+<html>
+    <head>
+        <script>
+            //  function defines with the function keyword the it can have input parameter or not 
+            //  it also can have return value or not 
+            //  function must be called by another event or another function 
+            function first(first,last){
+               var fullname;
+               fullname=first+" "+last;
+               return fullname;
+            }
+            function second(){
+                var result;
+                result=first('behnaz','sheikhi');
+                document.write(result);
+            }
+        </script>
+    </head>
+    <body>
+        <p> press the button in order to see the result of function</p>
+        <input type="button"  value="say hello" onclick="second()"/>
+    </body>
+</html>
